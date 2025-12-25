@@ -1,17 +1,22 @@
 let age = 24;
+
 let userName: string;
 userName = 'Max';
+
 let isInstructor: boolean;
 isInstructor = true;
+
 let hobbies: string[];
 hobbies = ['Sports', 'Cooking'];
-let person: { name: string; age: number };
+
+type Person = { name: string; age: number };
+let person: Person;
 person = {
   name: 'Max',
   age: 32,
 };
 
-let people: { name: string; age: number }[];
+let people: Person[];
 people = [person];
 
 let course: string | number = 'React - The Complete Guide';
